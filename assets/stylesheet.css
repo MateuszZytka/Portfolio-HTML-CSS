@@ -1,0 +1,168 @@
+* {
+    background-color: #e27d60;
+    color: white;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 45px;
+    display: block;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 20;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    overflow: hidden;
+}
+
+.column-project{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding: 16px;
+    flex: 1 1 400;
+}
+
+.column-project:hover{
+    opacity: 60%;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #85dcb8;
+}
+
+.li {
+    border-left: 4px solid #e27d60;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #85dcb8;
+}
+
+/*Flex container for "Cantact Me" section*/
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+/*Setting font size and hover element for Conact me Section*/
+
+.item{
+    font-size: 25px;
+}
+
+.item:hover {
+    text-shadow: 2px 2px #85dcb8;
+}
+
+/*Creates a hover effect on list in nav bar*/
+
+.li:hover {
+    background-color: #161D40;
+}
+
+/*Name on header*/
+
+#li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #85dcb8;
+}
+
+/*Banner image container*/
+
+.container {
+    color: #41B3A3;
+    position:relative;
+}
+
+/*Text in banner image*/
+
+.bottom-right {
+    color: #e27d60;
+    position: absolute;
+    bottom: 8px;
+    right: 100px;
+    background-color: transparent;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.middle-left{
+color: #41B3A3;
+position: relative;
+bottom: 50%;
+left: 0;
+background-color: transparent;
+font-size: 50px;
+text-shadow: 2px 2px black;
+}
+
+.column {
+    float: left;
+    padding: 12px;
+}
+
+/*left column of the row*/
+
+.left {
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+/*Right column of the Row*/
+
+.right {
+    float: right;
+    width: 75%;
+    border-left: 5px solid #85dcb8;
+    margin-bottom: 20px;
+}
+
+/*Allows columns to align on the same row*/
+
+.both-rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
